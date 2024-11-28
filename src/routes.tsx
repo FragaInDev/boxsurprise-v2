@@ -7,6 +7,8 @@ import { AdmLayout } from "./pages/_layouts/adm";
 import { UserLayout } from "./pages/_layouts/user";
 import { Home } from "./pages/app/cliente/home";
 import { Analise } from "./pages/app/adm/analise";
+import { Quiz } from "./pages/app/cliente/quiz";
+import { Carrinho } from "./pages/app/cliente/carrinho";
 
 export const router = createBrowserRouter([
     {
@@ -34,6 +36,8 @@ export const router = createBrowserRouter([
         ),
         children: [
           { path: '/home', element: <Home /> },
+          { path: '/quiz', element: <Quiz /> },
+          { path: '/carrinho', element: <Carrinho /> },
         ],
     },
     
